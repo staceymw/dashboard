@@ -4,15 +4,17 @@
 }
 
 .container {
+    height: 100vh;
+    width: 100vw;
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 4fr;
 }
 
 .sidebar {
     display:grid;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
     grid-template-rows: 1fr 3fr 6fr;
     gap: 15px;
     grid-column: 1 / 2;
@@ -20,19 +22,36 @@
     background-color: blue;
 }
 
-.dashboard-heading,
+/*.dashboard-heading,
 .bottom-links,
 .top-links {
-    margin-left: 10px;
-}
+    margin-left: 20px;
+}*/
 
 .dashboard-heading {
-    align-self: center;
-    font-size: 24px;
+    font-size: 30px;
+    font-weight: bolder;
+    color: aliceblue;
+}
+
+.top-links {
+    align-self: self-start;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: aliceblue;
 }
 
 .bottom-links {
-    align-self: self-start;
+    align-self:self-start;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: aliceblue;
 }
 
 .header {
@@ -42,6 +61,27 @@
 }
 
 .main-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
     background-color: grey;
+    justify-items: center;
+    align-content: center;
+}
 
+.projects {
+    grid-column: 1 / 2;
+    display: grid;
+    gap:15px;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    grid-template-rows: repeat(3, minmax(150px, 1fr));
+}
+
+.card {
+    background-color: aliceblue;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.your-projects {
+    font-size: 26px;
 }
