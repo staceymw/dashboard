@@ -63,9 +63,10 @@
 .main-content {
     display: grid;
     grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 3fr;
     background-color: grey;
     justify-items: center;
-    align-content: center;
+    align-items: center;
 }
 
 .projects {
@@ -84,4 +85,6 @@
 
 .your-projects {
     font-size: 26px;
+    align-self: self-end;
+    
 }
