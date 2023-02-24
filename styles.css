@@ -159,7 +159,7 @@ hr {
 .trending-heading {
     font-size: 26px;
     margin-top: 10px;
-    margin-bottom: -300px;
+    align-self: self-end;
 }
 
 .trending-container {
@@ -175,3 +175,4 @@ hr {
     margin-bottom: 10px;
     align-self: self-start;
 }
+
