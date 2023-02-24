@@ -6,6 +6,8 @@
 body {
     height: 100vh;
     width: 100vw;
+    margin: 0;
+    padding: 0;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -14,7 +16,7 @@ body {
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 100px 2fr;
+    grid-template-rows: 200px 2fr;
 }
 /*grid-template-rows: minmax(0, 1fr) 80%;*/
 
@@ -76,7 +78,7 @@ ul > li {
     display: grid;
     grid-template: repeat(4, auto) / 3fr minmax(280px, 1fr);
     padding: 20px 20px 0 20px;
-    column-gap: 25px;
+    gap: 25px;
     background-color: gray;
 }
 .projects {
@@ -86,7 +88,7 @@ ul > li {
     gap:20px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
     grid-template-rows: repeat(auto-fit, minmax(150px, 2fr));
-
+    margin-bottom: 20px;
 }
 
 .card {
@@ -95,9 +97,13 @@ ul > li {
     align-items: center;
     justify-items: center;
     background-color: aliceblue;
-    border: 1px solid black;
-    border-radius: 20px;
+    border-radius: 10px;
     height: 20vh;
+    padding-left: 10px;
+}
+
+.card-text {
+    grid-row: 1 / 2;
 }
 
 .your-projects {
@@ -111,3 +117,61 @@ ul > li {
     font-weight: bold;
     font-size: 18px;
   }
+
+.announcements-container {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-area: 2 / 2 / 4 / 3;
+    background-color: aliceblue;
+    border-radius: 10px;
+    align-items: center;
+    justify-items: center;
+    padding-left: 10px;
+    gap: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.announcement:first-line {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 96%;               
+    background-color: rgb(196, 196, 196);
+    height: 1px;
+  }
+
+.announcements-container:first-line {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.announcements-heading {
+    font-size: 26px;
+}
+
+.trending-heading {
+    font-size: 26px;
+    margin-top: 10px;
+    margin-bottom: -300px;
+}
+
+.trending-container {
+    background-color: aliceblue;
+    border-radius: 10px;
+    grid-area: 5 / 2 / 5 / 3;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    align-self: self-start;
+}
