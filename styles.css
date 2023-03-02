@@ -231,7 +231,7 @@ input {
     align-items: center;
     justify-items: center;
     background-color: #DDE5F5;
-    border-radius: 10px;
+    border-radius: 5px;
     height: 20vh;
     padding-left: 10px;
     border-left: 8px solid #AD7727;
@@ -270,7 +270,7 @@ input {
     grid-auto-rows: auto;
     grid-column: 2 / 3;
     background-color: #DDE5F5;
-    border-radius: 10px;
+    border-radius: 5px;
     align-items: center;
     justify-items: center;
     padding-left: 10px;
@@ -312,7 +312,7 @@ hr {
 
 .trending-container {
     background-color: #DDE5F5;
-    border-radius: 10px;
+    border-radius: 5px;
     grid-column: 2 / 3;
     display: flex;
     flex-direction: column;
